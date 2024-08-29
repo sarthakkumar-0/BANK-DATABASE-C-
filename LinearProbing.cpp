@@ -59,7 +59,7 @@ void LinearProbing::createAccount(std::string id, int count) {
     acc.balance = count;
     int i = 0;
     bool flag = false ; 
-    while (!flag  &&  i < (100000 - num_acc) ){
+    while (!flag  &&  i < (100000 - num_acc) ){     ////////////seee
         if (bankStorage1d[(h + (i)) % 100000].id == "null"){
             bankStorage1d[(h + (i)) % 100000] = acc;
             flag=true;
